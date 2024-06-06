@@ -5,147 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neuschwanstein Castle</title>
   <link rel="icon" href="Logo.png" type="image/icon type">
-  <style>
-    img{ 
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-
-    .sketchfab-embed-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  
-    .sketchfab-embed-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .invisible {
-      opacity: 0;
-      transition: opacity 8s;
-    }
-    
-    h1{
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: opacity 1s;
-    }
-    h2 {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: opacity 1s;
-    }
-
-    p {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: opacity 1s;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>    
 
   <div class="sketchfab-embed-wrapper"> 
     <iframe title="Neuschwanstein Castle,palace,scan,map" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/a23d1f12e6a64f9c92ab129b275f2daa/embed?ui_theme=dark"> 
     </iframe>
-    <div class="sketchfab-overlay">
-      <h1 class="invisible">Neuschwanstein Castle</h1>
-      <h2 class="invisible">Castelul de basm</h2>
-    </div> 
   </div>
-
-  <section id="about">
-    <!-- About Neuschwanstein -->
-    <p>
-      Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was built by King Ludwig II of Bavaria as a retreat and as a homage to Richard Wagner. It was opened to the public shortly after the king's death in 1886, and has become one of the most popular tourist attractions in Germany.     
-    </p>        
-    <p>         
-      The palace has been featured in several films, including Chitty Chitty Bang Bang and James Bond: Goldeneye. It has also been the inspiration for various Disney castles, including Sleeping Beauty Castle at Disneyland and Cinderella Castle at Walt Disney World.        
-    </p>
-  </section>
-
-  <section id="history">
-    <!-- History of Neuschwanstein -->
-    
-  </section>
-
-  <section id="gallery">
-    <!-- Gallery of Neuschwanstein images -->
-
-  </section>
-
-  <section id="visit">
-    <!-- Information on visiting Neuschwanstein -->
-
-  </section>
-   
-  <section id="conclusion">
-    <!--Conclusion in german-->
-
-  </section>
-  <script>
-    setTimeout(function() {
-      const iframe = document.querySelector('.sketchfab-embed-wrapper iframe');
-      iframe.style.filter = 'blur(5px)';
-    }, 7000); 
-
-    // Add a script to make the text fade in and out
-    document.addEventListener("DOMContentLoaded", function() {
-      const h1 = document.querySelector('h1');
-      const h2 = document.querySelector('h2');
-      const p = document.querySelector('p');
-    
-      setTimeout(function() {
-        h1.style.opacity = 1;
-        h2.style.opacity = 1;
-      }, 8000); // 8000 milliseconds (8 seconds)
-      
-      setTimeout(function() {
-        p.style.opacity = 1;
-      }, 10000)
-      
-      // Add a scroll event listener to the window
-      /*window.addEventListener('scroll', function() {
-        if (window.scrollY > 0) {
-          h1.style.opacity = 1;
-          h2.style.opacity = 1;
-        } else {
-          h1.style.opacity = 0;
-          h2.style.opacity = 0;
-        }
-      });*/
-    });
-    
-  
+  <script src="script.js">   
   </script>
 </body>
 </html>
